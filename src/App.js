@@ -7,6 +7,7 @@ import Rules_hook from './Component/Rules_hook';
 import UseState_Array from './Component/UseState_Array';
 import Usestate_obeject from './Component/Usestate_object';
 import Todo_list from './Component/Todo_list';
+import Short_circuit from './Component/Short_circuit';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <UseState_Array/>
       <Usestate_obeject/>
       <Todo_list/>
+      <Short_circuit/>
     </div>
   );
 }
