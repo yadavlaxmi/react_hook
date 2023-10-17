@@ -21,7 +21,10 @@ const Todo_list=()=>{
         setmyArray([]);
     }
     const removeElement=(id)=>{
-        alert(id)
+        const myNewArray= myArray.filter((currentElement)=>{
+            return currentElement.id !== id;
+        })
+        setmyArray(myNewArray)
     }
     return(
         <>
@@ -34,7 +37,7 @@ const Todo_list=()=>{
                             </h1>
                         )})
             }
-            <Button variant="contained" color="primary" onClick={clearArray}>clear</Button>
+            <Button variant="contained" color="primary" onClick={clearArray}>Clear</Button>
 
         </>
     )
