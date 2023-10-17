@@ -25,7 +25,7 @@ const UseState_Array=()=>{
             {
                 myArray.map((currentElement)=>{
                     return(
-                            <h1>Name:{currentElement.myName} and Age:{currentElement.age}</h1>
+                            <h1 key={currentElement.id}>Name:{currentElement.myName} and Age:{currentElement.age}</h1>
                         )})
             }
             <Button variant="contained" color="secondary" onClick={clearArray}>clear</Button>

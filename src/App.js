@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { Button } from '@mui/material';
 import Rules_hook from './Component/Rules_hook';
 import UseState_Array from './Component/UseState_Array';
+import Usestate_obeject from './Component/Usestate_object';
 
 function App() {
   const [myName, setMyName] = useState("meraki app");
@@ -28,6 +29,7 @@ function App() {
       <Button variant='contained' color='primary' onClick={changeName}>Click me</Button>
       <Rules_hook/>
       <UseState_Array/>
+      <Usestate_obeject/>
     </div>
   );
 }
