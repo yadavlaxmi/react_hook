@@ -1,15 +1,22 @@
 
 import './App.css';
+import React,{useState} from 'react';
 function App() {
-  var val="Meraki app"
+  // let myFirstval=useState("laxmi")[0];
+  // console.log(myFirstval)
+  // // console.log(useState("laxmi"))
+  // var val="Meraki app"
+   const[myName,setmyName]=useState("meraki app")
   const changeName=()=>{
-        val="laxmi"
-        console.log(val)
+    setmyName("laxmi")
+        // val="laxmi"
+        // console.log(val)
   }
+  console.log(myName)
   return (
 
     <div className='App'>
-      <h1>{val}</h1>
+      <h1>{myName}</h1>
       <button className='btn' onClick={changeName}>click me</button>
     </div>
   );
