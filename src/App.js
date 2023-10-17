@@ -6,6 +6,8 @@ import { Button } from '@mui/material';
 import Rules_hook from './Component/Rules_hook';
 import UseState_Array from './Component/UseState_Array';
 import Usestate_obeject from './Component/Usestate_object';
+import Todo_list from './Component/Todo_list';
+
 
 function App() {
   const [myName, setMyName] = useState("meraki app");
@@ -30,6 +32,7 @@ function App() {
       <Rules_hook/>
       <UseState_Array/>
       <Usestate_obeject/>
+      <Todo_list/>
     </div>
   );
 }
