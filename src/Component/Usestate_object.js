@@ -2,10 +2,10 @@ import React, { useState } from "react"
 import { Button } from "@mui/material"
 const Usestate_obeject=()=>{
     const[myObject,setmyObject]=useState({
-        myName:"laxmi",myAge:17,degree:"BCA"
+        myName:"laxmi",myAge:17,degree:"BCA",RollNo:55
     })
     const update_object=()=>{
-    setmyObject({myName:"laxmi yadav"})
+    setmyObject({...myObject,degree:"MCA"})
     }
     return(
         <div>
