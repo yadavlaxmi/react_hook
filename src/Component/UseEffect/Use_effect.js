@@ -5,8 +5,8 @@ const UseEffectExample = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log("hello useeffect");
-  }, []); 
+    document.title="chats(${count})"
+  }); 
 
   console.log("hello outside");
 
