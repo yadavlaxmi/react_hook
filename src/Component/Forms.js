@@ -9,11 +9,18 @@ const Forms = () => {
 
   const submitForm = (e) => {
     e.preventDefault();
-    const newEntry = { Name: name, Email: email, Password: password };
+    if(name && email && password){
+
+    
+    const newEntry = {id:new Date().getTime().toString(), Name: name, Email: email, Password: password };
     setAllEntry([...allEntry, newEntry]);
     setName(""); 
     setEmail("");
     setPassword("");
+    }
+    else{
+        alert("please fill the form")
+    }
   };
 
   return (
@@ -61,7 +68,7 @@ const Forms = () => {
       </form>
       <div>
         {allEntry.map((currentElement, index) => (
-          <div key={index}>
+          <div key={currentElement.id}>
             <p>Name: {currentElement.Name}</p>
             <p>Email: {currentElement.Email}</p>
             <p>Password: {currentElement.Password}</p>
