@@ -9,6 +9,7 @@ import Usestate_obeject from './Component/Usestate_object';
 import Todo_list from './Component/Todo_list';
 import Short_circuit from './Component/Short_circuit';
 import Forms from "./Component/Forms"
+import Use_effect from './Component/UseEffect/Use_effect';
 
 function App() {
   const [myName, setMyName] = useState("meraki app");
@@ -36,6 +37,7 @@ function App() {
       <Todo_list/>
       <Short_circuit/>
       <Forms/>
+      <Use_effect/>
     </div>
   );
 }
