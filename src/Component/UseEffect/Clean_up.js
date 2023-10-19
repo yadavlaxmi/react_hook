@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 const Clean_up=()=>{
     const[widthCount ,setWidthCount]=useState(window.screen.width);
     const actualWidth=()=>{
-        console.log ("I am width")
+        console.log (window.innerWidth)
     }
     useEffect(()=>{
         window.addEventListener("resize", actualWidth);
