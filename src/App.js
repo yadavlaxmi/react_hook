@@ -12,6 +12,7 @@ import Forms from "./Component/Forms"
 import Use_effect from "./Component/UseEffect/Use_effect"
 import Cond_useeffect from './Component/UseEffect/Cond_useeffect';
 import Dependency_list from './Component/Dependency_list';
+import Clean_up from './Component/UseEffect/Clean_up';
 function App() {
   const [myName, setMyName] = useState("meraki app");
 
@@ -41,6 +42,7 @@ function App() {
       <Use_effect/>
       <Cond_useeffect/>
       <Dependency_list/>
+      <Clean_up/>
     </div>
   );
 }
