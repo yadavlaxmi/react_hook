@@ -10,6 +10,8 @@ import Todo_list from './Component/Todo_list';
 import Short_circuit from './Component/Short_circuit';
 import Forms from "./Component/Forms"
 import Use_effect from "./Component/UseEffect/Use_effect"
+import Cond_useeffect from './Component/UseEffect/Cond_useeffect';
+import Dependency_list from './Component/Dependency_list';
 function App() {
   const [myName, setMyName] = useState("meraki app");
 
@@ -37,6 +39,8 @@ function App() {
       <Short_circuit/>
       <Forms/>
       <Use_effect/>
+      <Cond_useeffect/>
+      <Dependency_list/>
     </div>
   );
 }
