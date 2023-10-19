@@ -7,6 +7,9 @@ const Clean_up=()=>{
     }
     useEffect(()=>{
         window.addEventListener("resize", actualWidth);
+        return()=>{
+            window.removeEventListener("resize",actualWidth)
+        }
     })
 
 
