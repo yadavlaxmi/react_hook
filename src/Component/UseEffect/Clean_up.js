@@ -1,9 +1,13 @@
 
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 const Clean_up=()=>{
     const[widthCount ,setWidthCount]=useState(window.screen.width);
-
-
+    const actualWidth=()=>{
+        console.log ("I am width")
+    }
+    useEffect(()=>{
+        window.addEventListener("resize", actualWidth);
+    })
 
 
     return(
