@@ -12,6 +12,21 @@ const UseeffectApi=()=>{
     return(
         <>
             <h1 className='h1'>Useeffect Api</h1>
+
+
+            {
+                users.map((CurElem)=>{
+                    return(
+                        <div>
+                            <p className="p1">{CurElem.userId}</p>
+                            <p className="p2"> {CurElem.id}</p>
+                            <p className="p3">{CurElem.title}</p>
+                            <p className="p4">{CurElem.body}</p>
+                        </div>
+                    
+                    )
+                })
+            }
         </>
     )
 }
