@@ -1,6 +1,8 @@
+import Loads from "../../Api/Loads";
 import React,{useState,useEffect} from "react";
 const UseeffectApi=()=>{
     const[users,setUsers]=useState([]);
+    const[loads,setLoads]=useState(true)
     const getUsers=async()=>{
         try{
             const response= await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -16,6 +18,9 @@ const UseeffectApi=()=>{
     useEffect(()=>{
         getUsers();
     },[])
+    if(loads){
+        return<Loads/>
+    }
     return(
         <>
             <h1 className='h1'>Useeffect Api</h1>
