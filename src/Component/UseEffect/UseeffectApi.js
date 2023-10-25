@@ -2,8 +2,15 @@ import React,{useState,useEffect} from "react";
 const UseeffectApi=()=>{
     const[users,setUsers]=useState([]);
     const getUsers=async()=>{
-        const response= await fetch("https://jsonplaceholder.typicode.com/posts");
-        setUsers(await response.json())
+        try{
+            const response= await fetch("https://jsonplaceholder.typicode.com/posts");
+            setUsers(await response.json())
+    
+        }catch(error){
+            console.log("error"+error)
+        }
+        // const response= await fetch("https://jsonplaceholder.typicode.com/posts");
+        // setUsers(await response.json())
         // console.log(data)
     }
     useEffect(()=>{
@@ -14,8 +21,7 @@ const UseeffectApi=()=>{
             <h1 className='h1'>Useeffect Api</h1>
 
 
-            {
-                users.map((CurElem)=>{
+            {                users.map((CurElem)=>{
                     return(
                         <div>
                             <p className="p1">{CurElem.userId}</p>
