@@ -14,6 +14,8 @@ import Cond_useeffect from './Component/UseEffect/Cond_useeffect';
 import Dependency_list from './Component/Dependency_list';
 import Clean_up from './Component/UseEffect/Clean_up';
 import UseeffectApi from './Component/UseEffect/UseeffectApi';
+import Loading from "./Component/UseEffect/Loading"
+import Useref1 from './Api/Useref/Useref1';
 function App() {
   const [myName, setMyName] = useState("meraki app");
 
@@ -45,6 +47,8 @@ function App() {
       <Dependency_list/>
       <Clean_up/>
       <UseeffectApi/>
+      <Loading/>
+      <Useref1/>
     </div>
   );
 }
