@@ -17,6 +17,7 @@ import UseeffectApi from './Component/UseEffect/UseeffectApi';
 import Loading from "./Component/UseEffect/Loading"
 import Useref1 from './Api/Useref/Useref1';
 import Useref2 from './Api/Useref/Useref2';
+import Play_pause_button from './Api/Useref/Play_pause_button';
 function App() {
   const [myName, setMyName] = useState("meraki app");
 
@@ -51,6 +52,7 @@ function App() {
       <Loading/>
       <Useref1/>
       <Useref2/>
+      <Play_pause_button/>
     </div>
   );
 }
