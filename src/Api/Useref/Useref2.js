@@ -6,7 +6,8 @@ const Useref2=()=>{
     
   
   const changeStyle=()=>{
-    console.log(inputElement.current)
+    inputElement.current.style.backgroundColor="blue";
+    inputElement.current.focus();
   }
     return(
         <>
